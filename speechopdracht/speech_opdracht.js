@@ -28,10 +28,12 @@
     
     
     function makeThisSentence(){
-        let index = randomizer(arrayLength);
-        let woord1 = onderwerp[index];
-        let woord2 = werkwoord[index];
-        let woord3 = restwoord[index];
+        let ind1 = randomizer(onderwerp.length);
+        let ind2 = randomizer(werkwoord.length);
+        let ind3 = randomizer(restwoord.length);
+        let woord1 = onderwerp[ind1];
+        let woord2 = werkwoord[ind2];
+        let woord3 = restwoord[ind3];
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;
     }
@@ -52,9 +54,9 @@
     
     
     
-    const onderwerp = ["she", "Ed", "Rosmerta"];
-    const werkwoord = ["walks", "learns", "drinks"];
-    const restwoord = ["hard", "at school", "coffee"];
+    const onderwerp = ["father", "luke", "Obi-wan"];
+    const werkwoord = ["plays", "wants", "has"];
+    const restwoord = ["football", "a cookie", " a lemonade glass"];
         
     let plaatjes = [ "https://www.independent.ie/regionals/kerryman/news/b94fb/34250758.ece/AUTOCROP/w300/2015-12-02_ker_15039481_I1.JPG "]
-    let arrayLength = onderwerp.length;
+    
